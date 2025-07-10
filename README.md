@@ -4,8 +4,8 @@ This project demonstrates real-time player detection, tracking, and re-identific
 ### ⚙️ Setup Instructions
 1. Clone the repository
 ```bash
-git clone https://github.com/Manas1718/player-tracking.git
-cd player-tracking
+git clone https://github.com/Manas1718/Player-Re-identification-and-Tracking-in-a-Football-Video.git
+cd Player-Re-identification-and-Tracking-in-a-Football-Video
 ```
 
 2. Install dependencies
