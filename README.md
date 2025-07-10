@@ -13,14 +13,28 @@ cd Player-Re-identification-and-Tracking-in-a-Football-Video
 pip install ultralytics opencv-python deep_sort_realtime
 ```
 
-3. Place your `best.pt` YOLO model and `15sec_input_720p.mp4` video in the root folder.
+3. Download the trained YOLO model `best.pt` from the following Google Drive link and place it in the root folder:
+[Download best.pt](https://drive.google.com/file/d/1-5fOSHOSB9UXyP_enOoZNAMScrePVcMD/view)
 
-4. Run the script
+4. Place your `15sec_input_720p.mp4` video in the same folder.
+
+5. Make sure `best.pt` is not tracked by Git:
+   - Add this to `.gitignore`:
+     ```
+     best.pt
+     ```
+   - If it was already committed:
+     ```bash
+     git rm --cached best.pt
+     git commit -m "Ignore best.pt in .gitignore"
+     ```
+
+6. Run the script
 ```bash
 python main.py
 ```
 
-5. Output: Annotated video saved as `output_tracked.mp4`
+7. Output: Annotated video saved as `output_tracked.mp4`
 
 ### 📦 Dependencies
 - Python >= 3.8
@@ -29,3 +43,4 @@ python main.py
 - DeepSORT (via deep_sort_realtime)
 
 ---
+
